@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Matrices </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.1.2 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="emptyHeader"></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Solución de Sistemas de Ecuaciones 2x2</a></li>
+   <li><a href="nociones_bsicas_de_lgebra.html" class="daddy">Nociones Básicas de Álgebra</a>
+   <ul class="other-section">
+      <li><a href="terminologa_matemtica.html" class="daddy">Terminología matemática</a>
+      <ul class="other-section">
+         <li><a href="expresiones_que_indican_adicin.html" class="no-ch">Expresiones que indican adición</a></li>
+         <li><a href="expresiones_que_indican_multiplicacin.html" class="no-ch">Expresiones que indican multiplicación</a></li>
+         <li><a href="expresiones_que_indican_divisin_o_cociente.html" class="no-ch">Expresiones que indican división o cociente</a></li>
+         <li><a href="otras_expresiones.html" class="no-ch">Otras expresiones</a></li>
+      </ul>
+      </li>
+      <li><a href="evaluacin_terminologa_matemtica.html" class="no-ch">Evaluación Terminología Matemática</a></li>
+   </ul>
+   </li>
+   <li><a href="lectura_comprensin_y_anlisis_del_problema.html" class="no-ch">Lectura, Comprensión y Análisis del Problema</a></li>
+   <li><a href="extraccin_de_datos_yo_graficacin.html" class="no-ch">Extracción de Datos y/o Graficación</a></li>
+   <li><a href="traduccion_del_lenguaje_corriente_al_lenguaje_matemtico.html" class="daddy">Traduccion del lenguaje corriente al lenguaje Matemático</a>
+   <ul class="other-section">
+      <li><a href="expresiones_de_lenguaje_a_expresiones_algebricas.html" class="no-ch">Expresiones de lenguaje a expresiones algebráicas</a></li>
+      <li><a href="expresiones_algebraicas_como_ecuaciones_o_sistemas_de_ecuaciones.html" class="no-ch">Expresiones algebraicas como ecuaciones o sistemas de ecuaciones</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="resolucin_de_situacin_matemtica.html" class="current-page-parent daddy">Resolución de situación matemática</a>
+   <ul>
+      <li><a href="solucin_de_ecuaciones.html" class="daddy">Solución de Ecuaciones</a>
+      <ul class="other-section">
+         <li><a href="equilibrando_la_igualdad.html" class="no-ch">Equilibrando la igualdad</a></li>
+         <li><a href="transponiendo_trminos.html" class="no-ch">Transponiendo términos</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="solucin_de_sistemas_de_ecuaciones.html" class="current-page-parent daddy">Solución de sistemas de ecuaciones</a>
+      <ul>
+         <li><a href="mtodo_grfico.html" class="no-ch">Método Gráfico</a></li>
+         <li><a href="sustitucin.html" class="no-ch">Sustitución</a></li>
+         <li><a href="igualacin.html" class="no-ch">Igualación</a></li>
+         <li><a href="eliminacin.html" class="no-ch">Eliminación</a></li>
+         <li id="active"><a href="matrices.html" class="active no-ch">Matrices</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="solucin_de_problemas_usando_sistemas_de_ecuaciones_2x2.html" class="daddy">Solución de Problemas usando sistemas de ecuaciones 2x2</a>
+   <ul class="other-section">
+      <li><a href="miscelnea_de_ejercicios_y_problemas.html" class="no-ch">Miscelánea de ejercicios y problemas</a></li>
+   </ul>
+   </li>
+   <li><a href="referencias.html" class="no-ch">Referencias</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="eliminacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="solucin_de_problemas_usando_sistemas_de_ecuaciones_2x2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Matrices</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id46">
+<div class="iDevice emphasis0">
+<div id="ta46_85" class="block iDevice_content">
+<h2><span class="mw-headline" style="font-size: medium;">Para solucionar sistemas 2x2 por este método, es necesario que recordemos la </span>Regla de Cramer.</h2>
+<p><span style="color: #ff0000;"><strong><span style="text-decoration: underline;"><em><span style="font-size: medium;">Revisa el contenido de esta sección y complementa con el video de la profe Meli</span></em></span></strong></span></p>
+<p><a href="http://www.wikillerato.org/Imagen:Cramer2.gif.html" class="image" title="Gabriel Cramer nacio Ginebra ( Suiza ) 1704 y murio en 1752. A él le debemos la regla que lleva su nombre. ¡Gracias Gabriel por tu contribución a las Matemáticas!" style="font-size: medium; line-height: 1.5;"><img alt="Gabriel Cramer nacio Ginebra ( Suiza ) 1704 y murio en 1752. A él le debemos la regla que lleva su nombre. ¡Gracias Gabriel por tu contribución a las Matemáticas!" src="http://www.wikillerato.org/images/0/0b/Cramer2.gif" width="217" height="258" border="0" class="thumbimage" /></a></p>
+<div class="thumb tright">
+<div class="thumbinner">
+<div class="thumbcaption"><em><span style="font-size: medium;">Gabriel Cramer nacio Ginebra ( Suiza ) 1704 y murio en 1752. A él le debemos la regla que lleva su nombre. ¡Gracias Gabriel por tu contribución a las Matemáticas!</span></em></div>
+</div>
+</div>
+<p><span style="font-size: medium;"><span style="line-height: 1.5;">Esta regla es un método de resolución de sistemas de ecuaciones lineales que se puede utilizar cuando la matriz   </span><img src="http://www.wikillerato.org/images/math/math-8a2112ce3555f02d98f9d6183b80f1fb.png" title="
+\mathbf{A}
+" alt="
+\mathbf{A}
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;">   de coeficientes del sistema, es cuadrada y de determinante </span><span style="line-height: 1.5;">nulo. El que   </span><img src="http://www.wikillerato.org/images/math/math-8a2112ce3555f02d98f9d6183b80f1fb.png" title="
+\mathbf{A}
+" alt="
+\mathbf{A}
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;">   sea cuadrada significa que el numero de incognitas y el numero de ecuaciones coincide.</span></span></p>
+<p><span style="font-size: medium; line-height: 1.5;">Cuando el sistema de ecuaciones</span></p>
+<center>
+<p><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-b71c485841004af5476e80691d7e43ca.png" title="
+\left.
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}{c}
+   a_{11} \cdot x_1 + a_{12} \cdot x_2 + \ldots a_{1n} \cdot x_n = b_1
+   \\
+   a_{21} \cdot x_1 + a_{22} \cdot x_2 + \ldots a_{2n} \cdot x_n = b_2
+   \\
+   \dotfill
+   \\
+   a_{m1} \cdot x_1 + a_{m2} \cdot x_2 + \ldots a_{mn} \cdot x_n = b_m
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right\}
+" alt="
+\left.
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}{c}
+   a_{11} \cdot x_1 + a_{12} \cdot x_2 + \ldots a_{1n} \cdot x_n = b_1
+   \\
+   a_{21} \cdot x_1 + a_{22} \cdot x_2 + \ldots a_{2n} \cdot x_n = b_2
+   \\
+   \dotfill
+   \\
+   a_{m1} \cdot x_1 + a_{m2} \cdot x_2 + \ldots a_{mn} \cdot x_n = b_m
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right\}
+" class="tex" /></span></p>
+</center>
+<p><span style="font-size: medium; line-height: 1.5;">satisface las condiciones arriba mencionadas, su solución viene dada por:</span></p>
+<center>
+<p><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-57a8519773e4de96d9c3194f45f1c4b4.png" title="
+x_1 \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     b_1 &amp; a_{12} &amp; \ldots &amp; a_{1n}
+     \\
+     b_2 &amp; a_{22} &amp; \ldots &amp; a_{2n}
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     b_m &amp; a_{m2} &amp; \ldots &amp; a_{mn}
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}
+, \qquad \qquad x_2 \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     a_{11} &amp; b_1 &amp; \ldots &amp; a_{1n}
+     \\
+     a_{21} &amp; b_2 &amp; \ldots &amp; a_{2n}
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     a_{m1} &amp; b_m &amp; \ldots &amp; a_{mn}
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}, \qquad \qquad \ldots \ldots
+" alt="
+x_1 \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     b_1 &amp; a_{12} &amp; \ldots &amp; a_{1n}
+     \\
+     b_2 &amp; a_{22} &amp; \ldots &amp; a_{2n}
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     b_m &amp; a_{m2} &amp; \ldots &amp; a_{mn}
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}
+, \qquad \qquad x_2 \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     a_{11} &amp; b_1 &amp; \ldots &amp; a_{1n}
+     \\
+     a_{21} &amp; b_2 &amp; \ldots &amp; a_{2n}
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     a_{m1} &amp; b_m &amp; \ldots &amp; a_{mn}
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}, \qquad \qquad \ldots \ldots
+" class="tex" /></span></p>
+</center>
+<p></p>
+<center>
+<p><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-569b5d8f60f1d2e21c769b195d3609c9.png" title="
+\ldots \ldots, \qquad \qquad x_n \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     a_{11} &amp; a_{12} &amp; \ldots &amp; b_1
+     \\
+     a_{21} &amp; a_{22} &amp; \ldots &amp; b_2
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     a_{m1} &amp; a_{m2} &amp; \ldots &amp; b_m
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}
+\qquad \qquad
+" alt="
+\ldots \ldots, \qquad \qquad x_n \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cccc}
+     a_{11} &amp; a_{12} &amp; \ldots &amp; b_1
+     \\
+     a_{21} &amp; a_{22} &amp; \ldots &amp; b_2
+     \\
+     \vdots &amp; \vdots &amp; \ddots &amp; \vdots
+     \\
+     a_{m1} &amp; a_{m2} &amp; \ldots &amp; b_m
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}
+\qquad \qquad
+" class="tex" /></span></p>
+</center>
+<p><span style="font-size: medium; line-height: 1.5;">En general</span></p>
+<center>
+<p><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-0c733932ee23f2582f1af081ddbed5fc.png" title="
+x_i \, = \, \frac{|\mathbf{A}_i|}{|\mathbf{A}|}
+" alt="
+x_i \, = \, \frac{|\mathbf{A}_i|}{|\mathbf{A}|}
+" class="tex" /></span></p>
+</center>
+<p><span style="font-size: medium;"><span style="line-height: 1.5;">donde   </span><img src="http://www.wikillerato.org/images/math/math-ee2294c39d59f7b2e185d978ecdf826e.png" title="
+\mathbf{A}_i
+" alt="
+\mathbf{A}_i
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;">   es la matriz que se obtiene sustituyendo la i-esima columna de   </span><img src="http://www.wikillerato.org/images/math/math-8a2112ce3555f02d98f9d6183b80f1fb.png" title="
+\mathbf{A}
+" alt="
+\mathbf{A}
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" />,<span style="line-height: 1.5;">   por la matriz de los términos independientes,</span></span><span style="font-size: medium;"><span style="line-height: 1.5;">  </span><img src="http://www.wikillerato.org/images/math/math-bd4f20525a6aeba80dc0643033a64215.png" title="
+B
+" alt="
+B
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;">  .</span></span></p>
+<ul>
+<li><span style="font-size: medium;">Consideremos el sistema de ecuaciones:</span></li>
+</ul>
+<center>
+<p style="margin-left: 60px;"><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-9d7fa2a713677bcaf5cea62fe4a5126f.png" title="
+\left\{
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}[c]{rcl}
+   x \, + \, y \, = \, 2
+   \\
+   x \, - \, y \, = \, 0
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right.
+" alt="
+\left\{
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}[c]{rcl}
+   x \, + \, y \, = \, 2
+   \\
+   x \, - \, y \, = \, 0
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right.
+" class="tex" style="float: left;" /></span></p>
+</center>
+<p style="margin-left: 30px;"></p>
+<p style="margin-left: 30px;"></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;"><span style="line-height: 1.5;">En este sistema de ecuaciones lineales, la matriz   </span><img src="http://www.wikillerato.org/images/math/math-8a2112ce3555f02d98f9d6183b80f1fb.png" title="
+\mathbf{A}
+" alt="
+\mathbf{A}
+" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;">   de los coeficientes es una matriz cuadrada y</span></span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;"><span style="line-height: 1.5;">   </span><img src="http://www.wikillerato.org/images/math/math-657d3399a3d5de5fef04047646d22644.png" title="
+|\mathbf{A}| \, = \,
+\left|
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}[c]{cc}
+   1 &amp; ~~1
+   \\
+   1 &amp; -1
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right|
+&lt;/p&gt;
+&lt;pre&gt;\, = \, -2 \neq 0
+&lt;/pre&gt;
+&lt;p&gt;" alt="
+|\mathbf{A}| \, = \,
+\left|
+&lt;/p&gt;
+&lt;pre&gt; \begin{array}[c]{cc}
+   1 &amp; ~~1
+   \\
+   1 &amp; -1
+ \end{array}
+&lt;/pre&gt;
+&lt;p&gt;\right|
+&lt;/p&gt;
+&lt;pre&gt;\, = \, -2 \neq 0
+&lt;/pre&gt;
+&lt;p&gt;" class="tex" style="font-size: 0.82em; line-height: 1.5;" /><span style="line-height: 1.5;"> . </span></span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;"><span style="line-height: 1.5;">Por lo tanto, podemos aplicar la regla de Cramer para resolverlo:</span></span></p>
+<center>
+<p style="margin-left: 30px;"><span style="font-size: medium;"><img src="http://www.wikillerato.org/images/math/math-cc4c55b2e2b84ec9b768772cbfd55422.png" title="
+x \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cc}
+     2 &amp; ~~1
+     \\
+     0 &amp; -1
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|} \, = \, \frac{-2}{-2} \, = \, 1
+\qquad \qquad y \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cc}
+     1 &amp; 2
+     \\
+     1 &amp; 0
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}\, = \, \frac{-2}{-2} \, = \, 1
+" alt="
+x \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cc}
+     2 &amp; ~~1
+     \\
+     0 &amp; -1
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|} \, = \, \frac{-2}{-2} \, = \, 1
+\qquad \qquad y \, = \, \frac
+{
+&lt;/p&gt;
+&lt;pre&gt; \left|
+   \begin{array}[c]{cc}
+     1 &amp; 2
+     \\
+     1 &amp; 0
+   \end{array}
+ \right|
+&lt;/pre&gt;
+&lt;p&gt;}
+{|\mathbf{A}|}\, = \, \frac{-2}{-2} \, = \, 1
+" class="tex" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: left;"></p>
+<ul>
+<li style="text-align: left;"><span style="font-size: medium;"> Dado   el sistema</span></li>
+</ul>
+<p style="text-align: left; margin-left: 60px;"><img src="eXe_LaTeX_math_10.3.gif" width="136" height="41"  style="font-size: 0.82em;" /></p>
+<p style="text-align: left; margin-left: 60px;"><span style="font-size: medium;">que matricialmente es:</span></p>
+<p style="text-align: left; margin-left: 90px;"><span style="font-size: medium;"><img src="eXe_LaTeX_math_24.gif" width="95" height="32"  /></span></p>
+<p style="text-align: left; margin-left: 60px;"><span style="font-size: medium;">Hallamos los valores de X y Y usando la regla de Cramer</span></p>
+<p style="text-align: left; margin-left: 60px;"><span style="font-size: medium;"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29773b809b7b26f2a502f2501c77893b94143662" class="mwe-math-fallback-image-inline" aria-hidden="true" alt="{\displaystyle x={\frac {\begin{vmatrix}9&amp;1\\13&amp;3\end{vmatrix}}{\begin{vmatrix}3&amp;1\\2&amp;3\end{vmatrix}}}={9\cdot 3-1\cdot 13 \over 3\cdot 3-1\cdot 2}=2}" style="font-size: 0.82em;" /></span></p>
+<p style="margin-left: 60px; text-align: center;"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41246a5280a6afb3eaeb1e5fa798eed2d8ae5e7d" class="mwe-math-fallback-image-inline" aria-hidden="true" alt="{\displaystyle y={\frac {\begin{vmatrix}3&amp;9\\2&amp;13\end{vmatrix}}{\begin{vmatrix}3&amp;1\\2&amp;3\end{vmatrix}}}={3\cdot 13-9\cdot 2 \over 3\cdot 3-1\cdot 2}=3}" style="float: left;" /></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"></p>
+<p style="margin-left: 60px; text-align: center;"><strong>COMPLEMENTA LO APRENDIDO EN EL SIGUIENTE VIDEO DE LA PROFE MELI</strong></p>
+<p style="margin-left: 60px; text-align: center;"><strong><video width="320" height="240" controls="controls">
+<source src="SOLUCION_POR_MATRICES_CORREGIDO.mp4" type="video/mp4" /></video><br /></strong></p>
+</center>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice" id="id80">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">EVALÚO MIS AVANCES</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta80_104" class="block instructions iDevice_content">
+<p>Utiliza el método de de las matrices o regla de Cramer para solucionar el siguiente sistema <span> (Completa el procedimiento)</span>:</p>
+<p>               4x + 3y = 13</p>
+<p>                6x - 5y = -9</p>
+</div>
+
+    <div class="activity" id="activity-80_105">
+<form name="cloze-form-80_105" action="#" onsubmit="$exe.cloze.submit('80_105');return false" class="activity-form">
+<div id="cloze80_105">
+<script type="text/javascript">var YOUR_SCORE_IS="Su puntuación es "</script>
+<input type="hidden" name="clozeFlag80_105.strictMarking" id="clozeFlag80_105.strictMarking" value="false"/>
+
+<input type="hidden" name="clozeFlag80_105.checkCaps" id="clozeFlag80_105.checkCaps" value="false"/>
+
+<input type="hidden" name="clozeFlag80_105.instantMarking" id="clozeFlag80_105.instantMarking" value="false"/>
+
+<input type="hidden" name="clozeVar80_105.feedbackId" id="clozeVar80_105.feedbackId" value="ta80_106"/>
+
+<p>Calcula el determinante de la matriz A de este sistema es:</p>
+<p></p>
+<p>           |   
+<label for="clozeBlank80_105.0" class="sr-av">Rellenar huecos (1):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.0" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.0">JXUwMDZj
+</span>
+          
+<label for="clozeBlank80_105.1" class="sr-av">Rellenar huecos (2):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.1" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.1">JXUwMDZi
+</span>
+   |    </p>
+<p>|A|  =  |   
+<label for="clozeBlank80_105.2" class="sr-av">Rellenar huecos (3):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.2" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.2">JXUwMDZl
+</span>
+        
+<label for="clozeBlank80_105.3" class="sr-av">Rellenar huecos (4):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.3" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.3">JXUwMDc1JXUwMDE4
+</span>
+   |    =    (   
+<label for="clozeBlank80_105.4" class="sr-av">Rellenar huecos (5):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.4" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.4">JXUwMDZj
+</span>
+   )(   
+<label for="clozeBlank80_105.5" class="sr-av">Rellenar huecos (6):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.5" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.5">JXUwMDc1JXUwMDE4
+</span>
+   )  -  (   
+<label for="clozeBlank80_105.6" class="sr-av">Rellenar huecos (7):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.6" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.6">JXUwMDZl
+</span>
+   )(   
+<label for="clozeBlank80_105.7" class="sr-av">Rellenar huecos (8):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.7" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.7">JXUwMDZi
+</span>
+   )   =   (   
+<label for="clozeBlank80_105.8" class="sr-av">Rellenar huecos (9):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.8" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.8">JXUwMDc1JXUwMDFmJXUwMDAy
+</span>
+   ) - (   
+<label for="clozeBlank80_105.9" class="sr-av">Rellenar huecos (10):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.9" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.9">JXUwMDY5JXUwMDA5
+</span>
+   )  =     
+<label for="clozeBlank80_105.10" class="sr-av">Rellenar huecos (11):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.10" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.10">JXUwMDc1JXUwMDFlJXUwMDBi
+</span>
+  </p>
+<p>.</p>
+<p><span style="color: #0000ff;">Encontremos el valor de la variable X:</span></p>
+<p>        |   
+<label for="clozeBlank80_105.11" class="sr-av">Rellenar huecos (12):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.11" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.11">JXUwMDY5JXUwMDAy
+</span>
+            
+<label for="clozeBlank80_105.12" class="sr-av">Rellenar huecos (13):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.12" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.12">JXUwMDZi
+</span>
+    |</p>
+<p>        |    
+<label for="clozeBlank80_105.13" class="sr-av">Rellenar huecos (14):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.13" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.13">JXUwMDc1JXUwMDE0
+</span>
+        
+<label for="clozeBlank80_105.14" class="sr-av">Rellenar huecos (15):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.14" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.14">JXUwMDc1JXUwMDE4
+</span>
+   |            <span>(   
+<label for="clozeBlank80_105.15" class="sr-av">Rellenar huecos (16):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.15" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.15">JXUwMDY5JXUwMDAy
+</span>
+   )(   
+<label for="clozeBlank80_105.16" class="sr-av">Rellenar huecos (17):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.16" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.16">JXUwMDc1JXUwMDE4
+</span>
+   ) - (   
+<label for="clozeBlank80_105.17" class="sr-av">Rellenar huecos (18):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.17" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.17">JXUwMDc1JXUwMDE0
+</span>
+   )(   
+<label for="clozeBlank80_105.18" class="sr-av">Rellenar huecos (19):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.18" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.18">JXUwMDZi
+</span>
+   )</span>            <span>(   
+<label for="clozeBlank80_105.19" class="sr-av">Rellenar huecos (20):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.19" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.19">JXUwMDc1JXUwMDFiJXUwMDAz
+</span>
+   ) - (   
+<label for="clozeBlank80_105.20" class="sr-av">Rellenar huecos (21):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.20" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.20">JXUwMDc1JXUwMDFmJXUwMDA1
+</span>
+   )</span>              <span>     
+<label for="clozeBlank80_105.21" class="sr-av">Rellenar huecos (22):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.21" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.21">JXUwMDc1JXUwMDFiJXUwMDAz
+</span>
+   +   
+<label for="clozeBlank80_105.22" class="sr-av">Rellenar huecos (23):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.22" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.22">JXUwMDZhJXUwMDA1
+</span>
+   </span>                  
+<label for="clozeBlank80_105.23" class="sr-av">Rellenar huecos (24):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.23" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.23">JXUwMDc1JXUwMDFlJXUwMDBi
+</span>
+     </p>
+<p><span style="color: #ff0000;"></span>X =   ___________    =  _________________________   =  __________________     =  ________________     =     _____ =  <span>   
+<label for="clozeBlank80_105.24" class="sr-av">Rellenar huecos (25):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.24" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.24">JXUwMDY5
+</span>
+   </span>      </p>
+<p>                   |A|                                            <span> |A|</span>                                                 <span> |A|</span>                                                 |A|                             
+<label for="clozeBlank80_105.25" class="sr-av">Rellenar huecos (26):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.25" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.25">JXUwMDc1JXUwMDFlJXUwMDBi
+</span>
+  </p>
+<p>.</p>
+<p><span style="color: #0000ff;">Encontremos el valor de la variable Y:</span></p>
+<p>           |   
+<label for="clozeBlank80_105.26" class="sr-av">Rellenar huecos (27):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.26" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.26">JXUwMDZj
+</span>
+             
+<label for="clozeBlank80_105.27" class="sr-av">Rellenar huecos (28):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.27" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.27">JXUwMDY5JXUwMDAy
+</span>
+    |</p>
+<p>           <span>|   
+<label for="clozeBlank80_105.28" class="sr-av">Rellenar huecos (29):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.28" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.28">JXUwMDZl
+</span>
+               
+<label for="clozeBlank80_105.29" class="sr-av">Rellenar huecos (30):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.29" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.29">JXUwMDc1JXUwMDE0
+</span>
+   |</span>               <span>(   
+<label for="clozeBlank80_105.30" class="sr-av">Rellenar huecos (31):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.30" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.30">JXUwMDZj
+</span>
+   )(   
+<label for="clozeBlank80_105.31" class="sr-av">Rellenar huecos (32):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.31" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.31">JXUwMDc1JXUwMDE0
+</span>
+   ) - (   
+<label for="clozeBlank80_105.32" class="sr-av">Rellenar huecos (33):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.32" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.32">JXUwMDZl
+</span>
+   )(   
+<label for="clozeBlank80_105.33" class="sr-av">Rellenar huecos (34):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.33" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.33">JXUwMDY5JXUwMDAy
+</span>
+   )</span>             <span>(   
+<label for="clozeBlank80_105.34" class="sr-av">Rellenar huecos (35):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.34" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.34">JXUwMDc1JXUwMDFlJXUwMDA1
+</span>
+   ) - (   
+<label for="clozeBlank80_105.35" class="sr-av">Rellenar huecos (36):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.35" style="width:2em" />
+<span style="display:none" id="clozeAnswer80_105.35">JXUwMDZmJXUwMDBm
+</span>
+   )</span>                        
+<label for="clozeBlank80_105.36" class="sr-av">Rellenar huecos (37):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.36" style="width:5em" />
+<span style="display:none" id="clozeAnswer80_105.36">JXUwMDc1JXUwMDBkJXUwMDExJXUwMDAwJXUwMDA1
+</span>
+           </p>
+<p>Y  =  _____________   =   ________________________    =    _________________      =      ____________ =     
+<label for="clozeBlank80_105.37" class="sr-av">Rellenar huecos (38):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.37" style="width:1em" />
+<span style="display:none" id="clozeAnswer80_105.37">JXUwMDZi
+</span>
+  </p>
+<p>                   |A|                                             |A|                                                          
+<label for="clozeBlank80_105.38" class="sr-av">Rellenar huecos (39):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.38" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.38">JXUwMDc1JXUwMDFlJXUwMDBi
+</span>
+                                    
+<label for="clozeBlank80_105.39" class="sr-av">Rellenar huecos (40):</label>
+<input class="autocomplete-off" type="text" value="" id="clozeBlank80_105.39" style="width:3em" />
+<span style="display:none" id="clozeAnswer80_105.39">JXUwMDc1JXUwMDFlJXUwMDBi
+</span>
+              </p>
+<p></p>
+<p><span style="color: #0000ff;">Finalmente debes verificar que los valores encontrados para X y Y cumplen con las igualdades del sistema.</span></p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="submit80_105" value="Enviar"  id="submit80_105" />
+
+<input type="button" name="restart80_105" value="Reiniciar" style="display:none" id="restart80_105" onclick="$exe.cloze.restart('80_105')" />
+
+ 
+<input type="button" name="80_105showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton80_105" onclick="$exe.cloze.fillInputs('80_105')" />
+
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div id="clozeScore80_105"></div>
+</div>
+</form>
+</div>
+    <div id="ta80_106" class="feedback js-feedback iDevice_content" style="display:none">
+<p style="text-align: center;"><strong>VERIFICACIÓN DE RESULTADOS</strong></p>
+<table border="2" align="center"><caption></caption>
+<tbody>
+<tr>
+<td>
+<p>Número de respuestas</p>
+<p>correctas</p>
+</td>
+<td>Nivel de Desempeño</td>
+<td>Recomendación</td>
+</tr>
+<tr>
+<td>0 - 20</td>
+<td>BAJO</td>
+<td>Debes repasar, repite esta sección</td>
+</tr>
+<tr>
+<td>21 - 28</td>
+<td>BÁSICO</td>
+<td>Repite esta sección</td>
+</tr>
+<tr>
+<td>29 - 36</td>
+<td>ALTO</td>
+<td>Corrige los errores</td>
+</tr>
+<tr>
+<td>37-40</td>
+<td>SUPERIOR</td>
+<td>Pasa a la siguiente sección</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="eliminacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="solucin_de_problemas_usando_sistemas_de_ecuaciones_2x2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="my_js.js"></script></body></html>
